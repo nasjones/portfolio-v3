@@ -1,0 +1,40 @@
+.contentWrap {
+	background-color: rgba(122, 121, 121, 0.811);
+	color: white;
+	text-align: center;
+	padding: 0 10vw;
+	width: 40%;
+	height: 80%;
+}
+
+.contentHeader {
+	font-size: 10vmin;
+}
+
+.contentBody {
+	display: flex;
+	flex-direction: column;
+}
+
+.ticker * {
+	height: 150px;
+	list-style-type: none;
+	border-bottom: 1px solid white;
+}
+
+.ticker {
+	padding-inline-start: 0;
+}
+
+.linkDisplay {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding-top: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+	.contentWrap {
+		width: 80%;
+	}
+}

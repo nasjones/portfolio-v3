@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Navbar from "./NavBar";
+
+import ContentSlider from "./ContentSlider";
+import { Provider } from "react-awesome-slider/dist/navigation";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const location = useLocation();
+	return (
+		<div className="App">
+			<Provider slug={location.pathname}>
+				<Navbar />
+				<Routes>
+					<Route path="*" element={<ContentSlider />} />
+				</Routes>
+			</Provider>
+		</div>
+	);
 }
 
 export default App;

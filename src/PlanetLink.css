@@ -1,0 +1,20 @@
+.linkWrap {
+	width: 5vw;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.linkWrap > * {
+	margin: 0;
+}
+
+img {
+	max-width: calc(8rem + 0.2vw);
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	color: inherit;
+}

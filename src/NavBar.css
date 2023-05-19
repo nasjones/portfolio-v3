@@ -1,0 +1,17 @@
+#navBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-size: 3rem;
+	padding: 1rem;
+	text-decoration: none;
+	z-index: 3;
+	position: relative;
+	background-color: white;
+	border-bottom: 1px solid black;
+}
+
+#navBar * {
+	text-decoration: none;
+	color: black;
+}
