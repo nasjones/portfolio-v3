@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import Game_holder from "./img/Game-holder.png";
 import "./Extra.css";
+import { CircularProgress } from "@mui/material";
 
 export default function Extra() {
 	const [recentGames, setRecentGames] = useState([]);
+	const [loaded, setLoaded] = useState(false);
 
 	useEffect(() => {
 		(async () => {
@@ -13,6 +15,7 @@ export default function Extra() {
 				.then((response) => response.json())
 				.then((body) => {
 					const temp = body.games.map((item) => {
+						setLoaded(true);
 						return (
 							<div className="gameItem" key={item.name}>
 								<img
@@ -37,7 +40,7 @@ export default function Extra() {
 	return (
 		<section className="sectionInfo columnSection">
 			<h1>What I've Been playing!</h1>
-			<div id="gameWrap">{recentGames}</div>
+			{loaded ? <div id="gameWrap">{recentGames}</div> : <CircularProgress />}
 		</section>
 	);
 }
