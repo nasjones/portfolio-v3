@@ -5,7 +5,13 @@ import NewsTicker, { Directions } from "react-advanced-news-ticker";
 import { ArrowBack, ArrowForward, Pause, PlayArrow } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 
-export default function WorkSection({ imgUrl, title, info, links = [] }) {
+export default function WorkSection({
+	imgUrl,
+	title,
+	info,
+	links = [],
+	scroll,
+}) {
 	const [pausedState, setPaused] = useState(false);
 	const newsTickerRef = useRef(null);
 
@@ -74,6 +80,7 @@ export default function WorkSection({ imgUrl, title, info, links = [] }) {
 					</div>
 				</div>
 				<div className="linkDisplay">{links}</div>
+				{scroll ? <span>Scroll for more!</span> : null}
 			</div>
 		</section>
 	);

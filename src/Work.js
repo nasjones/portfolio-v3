@@ -22,6 +22,7 @@ export default function Work() {
 				title={"Coinbase"}
 				imgUrl={Coinbase}
 				info={CoinbaseData.info}
+				scroll
 			/>
 			<hr />
 			<WorkSection

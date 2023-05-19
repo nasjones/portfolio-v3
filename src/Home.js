@@ -14,7 +14,7 @@ export default function Home() {
 	const orbit = useMemo(() => {
 		let size = windowSize.current * 0.2;
 
-		if (size < 200) size = 200;
+		if (size < 180) size = windowSize.current * 0.4;
 
 		return size;
 	}, [windowSize]);

@@ -18,3 +18,9 @@ a:hover,
 a:active {
 	color: inherit;
 }
+
+@media screen and (max-width: 800px) {
+	img {
+		max-width: calc(5rem + 0.2vw);
+	}
+}
