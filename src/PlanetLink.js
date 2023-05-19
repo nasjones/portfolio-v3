@@ -6,7 +6,7 @@ export default function PlanetLink({ image, to, title }) {
 	return (
 		<div className="linkWrap">
 			<Link href={to}>
-				<img src={image} />
+				<img src={image} alt={to + "avi"} />
 				<h2>{title}</h2>
 			</Link>
 		</div>

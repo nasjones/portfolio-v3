@@ -14,13 +14,14 @@ export default function Extra() {
 				.then((body) => {
 					const temp = body.games.map((item) => {
 						return (
-							<div className="gameItem">
+							<div className="gameItem" key={item.name}>
 								<img
 									src={item.image_url}
 									onError={({ currentTarget }) => {
 										currentTarget.onerror = null;
 										currentTarget.src = { Game_holder };
 									}}
+									alt="missing-game :("
 								/>
 								<h2>{item.name}</h2>
 							</div>

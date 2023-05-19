@@ -3,16 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import {
-	Routes,
-	Route,
-	BrowserRouter,
-	useLocation,
-	useRouter,
-	useParams,
-} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-const slug = "";
 ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>

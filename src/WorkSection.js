@@ -9,19 +9,21 @@ export default function WorkSection({ imgUrl, title, info, links = [] }) {
 	const [pausedState, setPaused] = useState(false);
 	const newsTickerRef = useRef(null);
 
-	const data = useMemo(() =>
-		info.map((text, i) => (
-			<div className="newsItem" key={title + "-" + i + "-item"}>
-				{text}
-			</div>
-		))
+	const data = useMemo(
+		() =>
+			info.map((text, i) => (
+				<div className="newsItem" key={title + "-" + text}>
+					{text}
+				</div>
+			)),
+		[info, title]
 	);
 
 	const togglePlay = useCallback(() => {
 		let toggle = !pausedState;
 		toggle ? newsTickerRef.current.pause() : newsTickerRef.current.unPause();
 		setPaused(!pausedState);
-	});
+	}, [pausedState]);
 	return (
 		<section
 			className="sectionInfo"

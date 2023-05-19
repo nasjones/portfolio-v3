@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from "react";
+import React, { useState, useCallback } from "react";
 import { RoughNotation } from "react-rough-notation";
 import { Link } from "react-awesome-slider/dist/navigation";
 

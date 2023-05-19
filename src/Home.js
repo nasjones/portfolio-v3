@@ -5,8 +5,7 @@ import resume from "./img/newResume.png";
 import work from "./img/projectsBot.png";
 import mePic from "./img/meSticker.png";
 import funPic from "./img/funSticker.png";
-import React from "react";
-import { useMemo, useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import "./Home.css";
 
 export default function Home() {
@@ -26,7 +25,7 @@ export default function Home() {
 				centerContent={
 					<div className="aviWrap">
 						<div>
-							<img src={avatar} className="Avi" />
+							<img src={avatar} className="Avi" alt="My-avi" />
 							<h1>Click! or Swipe for more!</h1>
 						</div>
 					</div>

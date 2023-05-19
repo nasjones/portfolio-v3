@@ -5,7 +5,7 @@ export default function Bio() {
 	return (
 		<section className="sectionInfo">
 			<div className="bioWrap">
-				<img src={BioPic} id="bioPic" />
+				<img src={BioPic} id="bioPic" alt="Me" />
 				<p>
 					I was born and raised in Long Island New York. From as far back as I
 					can remember I have always been in front of a computer screen trying

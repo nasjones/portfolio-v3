@@ -1,5 +1,4 @@
 import Home from "./Home";
-import Navbar from "./NavBar";
 import Work from "./Work";
 import Bio from "./Bio";
 import Extra from "./Extra";
