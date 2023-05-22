@@ -15,10 +15,18 @@ export const QuizBowlData = {
 		"Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.",
 	],
 	links: [
-		<Link to={"https://quiz-bowl-one.vercel.app/"} target="_blank">
+		<Link
+			to={"https://quiz-bowl-one.vercel.app/"}
+			target="_blank"
+			key="quizbowl-link"
+		>
 			Make a Quiz!
 		</Link>,
-		<Link to={"https://github.com/nasjones/quiz-maker-app"} target="_blank">
+		<Link
+			to={"https://github.com/nasjones/quiz-maker-app"}
+			target="_blank"
+			key="quizbowl-git"
+		>
 			Check out the files
 		</Link>,
 	],
@@ -32,10 +40,18 @@ export const MyGamesData = {
 		"Python/ JavaScript/ Flask/ PostgreSQL/ CSS/ HTML.",
 	],
 	links: [
-		<Link to={"https://game-finder.herokuapp.com"} target="_blank">
+		<Link
+			to={"https://game-finder.herokuapp.com"}
+			target="_blank"
+			key="mygames-link"
+		>
 			Find some Reccommendations
 		</Link>,
-		<Link to={"https://github.com/nasjones/my_games"} target="_blank">
+		<Link
+			to={"https://github.com/nasjones/my_games"}
+			target="_blank"
+			key="mygames-git"
+		>
 			Check out the files
 		</Link>,
 	],
@@ -48,10 +64,18 @@ export const ShowtunesData = {
 		"Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.",
 	],
 	links: [
-		<Link to={"https://show-tunes.vercel.app/"} target="_blank">
+		<Link
+			to={"https://show-tunes.vercel.app/"}
+			target="_blank"
+			key="showtunes-link"
+		>
 			Use Showtunes
 		</Link>,
-		<Link to={"https://github.com/nasjones/playlist-client"} target="_blank">
+		<Link
+			to={"https://github.com/nasjones/playlist-client"}
+			target="_blank"
+			key="showtunes-git"
+		>
 			Check out the files
 		</Link>,
 	],
@@ -64,10 +88,18 @@ export const CrudhubData = {
 		"Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.",
 	],
 	links: [
-		<Link to={"https://nasjones.github.io/Crudhub/"} target="_blank">
+		<Link
+			to={"https://nasjones.github.io/Crudhub/"}
+			target="_blank"
+			key="crudhub-link"
+		>
 			Use Crudhub
 		</Link>,
-		<Link to={"https://github.com/nasjones/Crudhub"} target="_blank">
+		<Link
+			to={"https://github.com/nasjones/Crudhub"}
+			target="_blank"
+			key="crudhub-git"
+		>
 			Check out the files
 		</Link>,
 	],

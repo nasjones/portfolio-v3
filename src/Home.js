@@ -1,7 +1,7 @@
 import avatar from "./img/Opeepsavatar.png";
 import { Planet } from "react-planet";
 import PlanetLink from "./PlanetLink";
-import resume from "./img/newResume.png";
+import resumeAvi from "./img/newResume.png";
 import work from "./img/projectsBot.png";
 import mePic from "./img/meSticker.png";
 import funPic from "./img/funSticker.png";
@@ -35,7 +35,12 @@ export default function Home() {
 				hideOrbit
 			>
 				<PlanetLink image={work} to={"/work"} title={"Work"} />
-				<PlanetLink image={resume} to={"/projects"} title={"Resume"} />
+				<PlanetLink
+					image={resumeAvi}
+					to={"/files/Resume.pdf"}
+					title={"Resume"}
+					download
+				/>
 
 				<h1 id="nameTitle">Nassir Jones</h1>
 				<PlanetLink image={mePic} to={"/me"} title={"Bio"} />

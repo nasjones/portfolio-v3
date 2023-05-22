@@ -15,7 +15,13 @@ const Navbar = withNavigationContext(({ fullpage }) => {
 		};
 		return Object.entries(Items).map(([name, link]) => {
 			return (
-				<NavItem title={name} link={link} active={slug === link} slug={slug} />
+				<NavItem
+					title={name}
+					link={link}
+					active={slug === link}
+					slug={slug}
+					key={`navItem-${name}`}
+				/>
 			);
 		});
 	}, [slug]);
