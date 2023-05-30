@@ -20,6 +20,10 @@ body * {
 	height: 85vh;
 }
 
+a:focus-visible {
+	border: 2px #fb6376 solid;
+}
+
 #nameTitle {
 	font-size: calc(3rem + 0.4vw);
 	font-family: "Patrick Hand SC";

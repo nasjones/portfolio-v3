@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const CoinbaseData = {
 	info: [
-		"Lead the launch and post-launch maintenance of customer-facing products for Coinbase Prime's 13,000 institutional clients.",
+		"Led the launch and post-launch maintenance of customer-facing products for Coinbase Prime's 13,000 institutional clients.",
 		"Designed backend APIs and features in Ruby that served the needs of both customers and developers.",
 		"Delivered and maintained clean, accessible code and ensured the codebase was always up to standard.",
 	],
@@ -27,7 +27,7 @@ export const QuizBowlData = {
 			target="_blank"
 			key="quizbowl-git"
 		>
-			Check out the files
+			Check out the QuizBowl files
 		</Link>,
 	],
 };
@@ -52,7 +52,7 @@ export const MyGamesData = {
 			target="_blank"
 			key="mygames-git"
 		>
-			Check out the files
+			Check out the MyGames files
 		</Link>,
 	],
 };
@@ -76,7 +76,7 @@ export const ShowtunesData = {
 			target="_blank"
 			key="showtunes-git"
 		>
-			Check out the files
+			Check out the Showtunes files
 		</Link>,
 	],
 };
@@ -100,7 +100,7 @@ export const CrudhubData = {
 			target="_blank"
 			key="crudhub-git"
 		>
-			Check out the files
+			Check out the Crudhub files
 		</Link>,
 	],
 };

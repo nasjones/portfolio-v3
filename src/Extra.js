@@ -14,10 +14,9 @@ export default function Extra() {
 			})
 				.then((response) => response.json())
 				.then((body) => {
-					const temp = body.games.map((item) => {
-						setLoaded(true);
+					const temp = body.games.map((item, i) => {
 						return (
-							<div className="gameItem" key={item.name}>
+							<div className={`gameItem game-${i % 2}`} key={item.name}>
 								<img
 									src={item.image_url}
 									onError={({ currentTarget }) => {
@@ -30,7 +29,9 @@ export default function Extra() {
 							</div>
 						);
 					});
+
 					setRecentGames(temp);
+					setLoaded(true);
 				});
 		})();
 

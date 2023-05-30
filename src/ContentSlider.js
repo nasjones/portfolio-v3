@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import AwesomeSlider from "react-awesome-slider";
-import "react-awesome-slider/dist/custom-animations/cube-animation.css";
+import "react-awesome-slider/dist/custom-animations/open-animation.css";
 import {
 	withNavigationHandlers,
 	withNavigationContext,
@@ -17,8 +17,9 @@ export default withNavigationContext(({ fullpage }) => {
 		<ContentSlider
 			startupScreen={<Home />}
 			startupDelay={0}
-			animation="cubeAnimation"
+			animation="openAnimation"
 			className="slider"
+			infinite
 			onTransitionEnd={() => {
 				if (isFirstLoad.current === true) {
 					document.querySelector("body").classList.add("animated");
